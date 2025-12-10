@@ -15,8 +15,8 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "instantinfra" {
-  name = "${var.prefix}-gcs"
-  location = upper(var.region)
+  name          = "${var.prefix}-gcs"
+  location      = upper(var.region)
   force_destroy = true
 }
 

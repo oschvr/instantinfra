@@ -16,7 +16,7 @@ provider "google" {
 
 
 resource "google_artifact_registry_repository" "instantinfra" {
-    location = var.region
-    repository_id = "${var.prefix}-gar-ii"
-    format = "DOCKER"
+  location      = var.region
+  repository_id = "${var.prefix}-gar-ii"
+  format        = "DOCKER"
 }
